@@ -1,0 +1,16 @@
+SELECT
+    BOARD_SEQ,
+    USER_SEQ,
+    substr(TITLE,1,30) as TITLE,
+    substr(CONTENT,1,100) as CONTENT,
+    REG_DATE,
+    UP_DATE,
+    DEL_YN,
+    TYPE,
+    DATE_FORMAT(REG_DATE, '%Y-%m-%d %H:%i') AS REG_DATE
+FROM
+    TB_BOARD
+WHERE
+    TYPE =  #type#
+ORDER BY BOARD_SEQ DESC
+LIMIT #pos#, #limit#

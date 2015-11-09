@@ -1,0 +1,8 @@
+SELECT 
+    *
+FROM
+    TB_USER
+WHERE
+    user_email = '#user_email#'
+and
+    password = '#password#'

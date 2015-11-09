@@ -1,0 +1,6 @@
+SELECT 
+    COUNT(*) AS cnt
+FROM
+    TB_USER
+WHERE
+    user_email = '#user_email#'

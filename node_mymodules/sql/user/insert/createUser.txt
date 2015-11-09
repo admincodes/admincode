@@ -1,0 +1,18 @@
+INSERT INTO TB_USER
+(
+USER_NAME,
+USER_EMAIL,
+PASSWORD,
+REG_DATE,
+UP_DATE,
+DEL_YN,
+COMMENT)
+ VALUES
+(
+'#user_name#',
+'#user_email#',
+'#password#',
+sysdate(),
+sysdate(),
+'N',
+'')

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0013)about:internet -->
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="/css/bootstrap-theme.min.css" rel="stylesheet">-->
+    <link href="/css/starter-template.css" rel="stylesheet">
+    <link href="/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="/plugin/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!--bootstrap markdown-->
+    <link rel="stylesheet" href="/plugin/editor/css/bootstrap-markdown.min.css">
+
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/util/ajaxUtil.js"></script>
+    <script src="/js/menu/menu.js"  charset="euc-kr"></script>
+    <script src="/js/util/mustache.js" charset="euc-kr"></script>
+    <script src="/js/util/paging.js" charset="euc-kr"></script>
+    <script src="/js/board/board.js" charset="euc-kr"></script>
+    <script src="/js/user/user.js" charset="euc-kr"></script>
+    <script src="/js/modal/modal.js" charset="euc-kr"></script>
+
+    <title>AdminCode</title>
+</head>
+    <body>
+    <nav id='titmeMenu' class="navbar navbar-inverse navbar-fixed-top">
+        <!-- html/template/menu/titleMenu.html -->
+    </nav>
+    
+    <div class="container">
+     <div class="row row-offcanvas row-offcanvas-right">
+          <div class="col-xs-12 col-sm-9">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#sectionA"><i class="fa fa-question-circle"></i><b>&nbsp;질문하기</b></a></li>
+            </ul><br>
+            <div class="tab-content">
+                <div id="sectionA" class="tab-pane fade in active">
+                    <div class="well-profile">
+                            <!--텍스트에디터-->
+                        <section>
+                            <div class="profile-well">
+                                <div class="form-group">
+                                    <input class="form-control" id="question_title" name="title" type="text" placeholder="제목"/>
+                                </div>
+                                <textarea id="target-editor-twitter" rows="15"></textarea>
+                                <!--<textarea data-provide="target-editor-twitter"></textarea>-->
+                            </div>
+                        </section><br>
+                        <!--태그입력-->
+                        <div class="form-group">
+                            <input class="form-control" id="question_tags" hint="구분은 스페이스한칸으로 합니다" name="title" type="text" placeholder="태그입력(html,javasript,css 등)"/>
+                        </div>
+                        <p><b>질문 종류선택</b></p>
+                        <select id="question_type" class="form-control">
+                            <option value="10">개발코드</option>
+                            <option value="20">데이터베이스</option>
+                            <option value="30">서버</option>
+                        </select>
+                        
+                </div>
+                    <a href="javascript:writeTopic();" class="btn btn-info btn-sm" data-toggle="modal" style="float:right;"><i class="fa fa-pencil-square-o"></i>&nbsp;질문하기</a>
+            </div>
+         </div>
+        </div>
+         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+                  <div class="alert alert-dismissible alert-info">
+                    <strong><i class="glyphicon glyphicon-info-sign"></i>알림</strong><br>
+                      <p><strong>MARKDOWN</strong> editor 입니다.</p>
+                  </div>
+        </div>
+     </div>    
+    </div>        
+    <!--footer-->    
+    <footer class="footer">
+      <div class="container">    
+         <ul class="text-muted">
+             <li><a href="#123">사이트소개</a></li>
+             <li><a href="#123">사이트리소스</a></li>
+             <li><a href="private.html">개인정보처리방침</a></li>
+        </ul>
+    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- MODAL LOGIN PAGE -->
+
+    <!-- 회원가입 -->
+
+    <!-- MODAL QUESTION PAGE-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>    
+    <!-- markdown editor -->
+    <!--<script src="http://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>-->
+    <!--<script src="/plugin/editor/js/markdown.js"></script>-->
+    <script src="/plugin/editor/js/marked.js"></script>    
+    <script src="/plugin/editor/js/to-markdown.js"></script>
+    <script src="/plugin/editor/js/bootstrap-markdown.js"></script>
+    <script src="http://rawgit.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js"></script>
+    <script src="/plugin/editor/js/main.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            placement: 'bottom'
+        })
+    });  
+    $('.btn-group [title]').tooltip({container: 'body'});
+    </script>
+    
+  
+  
+</body>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0013)about:internet -->
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/starter-template.css" rel="stylesheet">
+    <link href="/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="/plugin/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+
+
+    </style>
+    <!-- 스크립트 dependency
+        jquery > ajaxUtil> menu
+                           mustache
+                           paging
+
+     -->
+
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/util/ajaxUtil.js"></script>
+    <script src="/js/menu/menu.js"  charset="euc-kr"></script>
+    <script src="/js/util/mustache.js" charset="euc-kr"></script>
+    <script src="/js/util/paging.js" charset="euc-kr"></script>
+    <script src="/js/board/board.js" charset="euc-kr"></script>
+    <script src="/js/user/user.js" charset="euc-kr"></script>
+    <script src="/js/modal/modal.js" charset="euc-kr"></script>
+    <script>
+
+        function init(){
+            getData('10', 1);
+        }
+        window.onload = init;
+    </script>
+    <!--icon-->
+    <!--<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
+    <!-- 링크텍스트 -->
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="/plugin-editor/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/plugin-editor/css/bootstrap-markdown.min.css">-->
+
+
+
+    <title>AdminCode</title>
+    </head>
+    <body>
+    <nav id='titmeMenu' class="navbar navbar-inverse navbar-fixed-top">
+        <!-- html/template/menu/titleMenu.html -->
+    </nav>
+
+    <div class="container">
+            <div class="row row-offcanvas row-offcanvas-right">
+            <div class="col-xs-12 col-sm-9">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#sectionA" onclick="getData('10', 1)";><i class="fa fa-code"></i> 개발코드</a></li>
+                <li><a data-toggle="tab" href="#sectionB" onclick="getData('20', 1);"><i class="fa fa-database"></i> 데이터베이스</a></li>
+                <li><a data-toggle="tab" href="#sectionC" onclick="getData('30', 1);"><i class="fa fa-server"></i> 서버</a></li>
+                <a href="question_form.html" class="btn btn-info btn-sm pull-right"><i class="fa fa-pencil-square-o"></i>&nbsp;질문하기</button></a>
+            </ul>
+                <div class="tab-content">
+            <div id="sectionA" class="tab-pane fade in active">
+            <table class="table">
+            <tbody id="s10">
+
+            </tbody>
+    </table>
+
+    </div>
+    <div id="sectionB" class="tab-pane fade">
+                <!--contents-->
+        <table class="table">
+            <tbody id="s20">
+
+            </tbody>
+            </table>
+            </div>
+            <div id="sectionC" class="tab-pane fade">
+                <!--contents-->
+                <table class="table">
+                    <tbody id="s30">
+
+                    </tbody>
+                    </table>
+            </div>
+
+        <div>
+            <!--<a href="question_form.html" class="btn btn-warning " style="margin-top: 10px; float:right;">질문하기</button></a>-->
+    </div>
+    </div>
+    <!-- nav position -->
+    <nav >
+        <ul class="pagination pagination-sm" id="paging">
+
+        </ul>
+    </nav>
+
+
+    </div>
+
+                <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+                    <div class="alert alert-dismissible alert-info">
+                        <strong>반갑습니다!</strong><br>
+                        <p><strong>AdminCode</strong> 입니다.<br>
+                            <strong><i class="fa fa-code"></i> 각종언어</strong>의 질문게시판<br>
+                            <strong><i class="fa fa-database"></i> 데이터베이스</strong>의 질문게시판<br>
+                            <strong><i class="fa fa-server"></i> 서버</strong>의 질문게시판</P>
+                        </p>
+                    </div>
+                    <a href="grade.html" class="btn btn-info btn-block"><i class="fa fa-list"></i> 점수등급표</a><br>
+
+
+                </div>
+
+    </div>
+
+    </div>
+        <!-- /.container -->
+        <!--foooter -->
+    <footer class="footer">
+      <div class="container">
+         <ul class="text-muted">
+             <li><a href="#123">사이트소개</a></li>
+             <li><a href="#123">사이트리소스</a></li>
+             <li><a href="private.html">개인정보처리방침</a></li>
+        </ul>
+    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- MODAL LOGIN PAGE -->
+
+
+
+    <!-- 회원가입 -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!--editor-->
+
+    </body>
+</html>

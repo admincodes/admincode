@@ -1,0 +1,85 @@
+body {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	line-height:1.42857143;
+	color:#333;
+	background-color:#fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.tag-black {
+	display:inline;
+	padding:.2em .6em .3em;
+	font-size:75%;
+	font-weight:700;
+	line-height:1;
+	color:#fff;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:baseline;
+	border-radius:.25em;
+    background-color: #777;
+    
+} 
+.well-profile {
+	min-height:20px;
+	padding:19px;
+	margin-bottom:20px;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-radius:4px;
+	/*-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.05);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.05)*/*/
+}
+
+
+
+<!--btn input-->
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+/*input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}*/
+
+<!--test -->
+.wmd-preview {
+  box-sizing: border-box;
+  padding: 10px 0;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  clear: both;
+}
+
+<!--댓글-->
+
+#main_content a:hover {
+  color: #0069ba;
+  text-shadow: #0090ff 0px 0px 2px;
+}
+
+.media-list .media {
+  border-bottom: 1px dashed #efefef;
+  margin-bottom: 25px;
+}
+
+<!--backquote example-->
+
+ 

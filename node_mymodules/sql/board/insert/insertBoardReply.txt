@@ -1,0 +1,4 @@
+INSERT INTO TB_BOARD_REPLY
+(BOARD_SEQ, USER_SEQ, USER_NAME, REPLY_CONTENT, REG_DATE)
+values
+('#board_seq#', '#user_seq#', (select USER_NAME FROM TB_USER WHERE USER_SEQ ='#user_seq#'), '#content#', sysdate())

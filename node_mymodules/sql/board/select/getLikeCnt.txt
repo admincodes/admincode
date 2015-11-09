@@ -1,0 +1,5 @@
+SELECT count(*) as cnt
+FROM
+    TB_BOARD_LIKE
+WHERE USER_SEQ ='#user_seq#'
+and BOARD_SEQ ='#board_seq#'

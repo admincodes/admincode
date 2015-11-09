@@ -1,0 +1,16 @@
+SELECT
+    BOARD_SEQ,
+    USER_SEQ,
+    SUBSTR(TITLE, 1, 30) AS TITLE,
+    SUBSTR(CONTENT, 1, 100) AS CONTENT,
+    REG_DATE,
+    UP_DATE,
+    DEL_YN,
+    TYPE,
+    LIKE_CNT,
+    HATE_CNT,
+    DATE_FORMAT(REG_DATE, '%Y-%m-%d %H:%i') AS REG_DATE
+FROM
+    TB_BOARD
+WHERE
+    board_seq = '#board_seq#';

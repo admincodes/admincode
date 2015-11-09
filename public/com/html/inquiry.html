@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- saved from url=(0013)about:internet -->
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/starter-template.css" rel="stylesheet">
+    <link href="/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="/plugin/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    
+    
+    <!--bootstrap markdown-->
+    <link rel="stylesheet" href="/plugin/editor/css/bootstrap-markdown.min.css">
+    
+    <title>AdminCode</title>
+</head>
+    <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">AdminCode</a>
+        </div>
+        <!--<div id="navbar" class="collapse navbar-collapse">-->
+         <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+             <li><a href="" ><i class="fa fa-google-plus-square fa-lg"></i></a></li>
+            <li><a href="" ><i class="fa fa-facebook-square fa-lg"></i></a></li>
+            <li><a href="" data-toggle="modal" data-target="#login" >로그인</a></li>
+            <li><a href="" data-toggle="modal" data-target="#signin" >회원가입</a></li>
+            <li><a href="">문의</a></li>
+            <!--<a href="#myModal" class="btn btn-primary" data-toggle="modal">로그인</a>-->
+          </ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <div class="container">
+     <div class="row row-offcanvas row-offcanvas-right">
+          <div class="col-xs-12 col-sm-9">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#sectionA"><i class="fa fa-question-circle"></i><b> 문의하기</b></a></li>
+            </ul><br>
+            <div class="tab-content">
+                <div id="sectionA" class="tab-pane fade in active">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <b>이메일 문의하기</b>
+                                </div>
+                        <!-- /.panel-heading -->
+                            <div class="panel-body">          
+                            <form role="form">
+                            
+                               <div class="form-group input-group col-xs-6">
+                                   <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                    <label for="inputName" class="sr-only">이름</label>
+                                    <input type="text" id="inputName" class="form-control" placeholder="이름" required>
+                                </div>
+                                <div class="form-group input-group col-xs-6">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                                    <label for="inputEmail" class="sr-only">이메일</label>
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="이메일" required >
+                               </div>
+                                <div class="form-group input-group">
+                                    <span class="input-group-addon"><i class="fa fa-file-text fa-fw"></i></i></span>
+                                    <label for="inputText" class="sr-only">내용</label>
+                                    <textarea class="form-control" id="textArea" rows="8" placeholder="내용을 적어주세요" style="resize: none;"></textarea>
+                               </div>
+                            </form>
+                                <a href="" class="btn btn-info btn-sm pull-right" data-toggle="modal" data-target="#password-change" ><i class="fa fa-paper-plane"></i> 보내기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+         </div>
+        </div>
+         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+                  <div class="alert alert-dismissible alert-info">
+                    <strong><i class="glyphicon glyphicon-info-sign"></i>알림</strong><br>
+                      <p><strong>이메일 문의</strong>입니다.</p>
+                  </div>
+        </div>
+     </div>    
+    </div>        
+    <!--footer-->    
+    <footer class="footer">
+      <div class="container">    
+         <ul class="text-muted">
+             <li><a href="#123">사이트소개</a></li>
+             <li><a href="#123">사이트리소스</a></li>
+             <li><a href="private.html">개인정보처리방침</a></li>
+        </ul>
+    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- MODAL LOGIN PAGE -->
+     <div class="modal fade" id="login">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" style="text-align: center;">로그인</h4>
+          </div>
+          <div class="modal-body">
+                  <form role="form">
+                <div class="form-group input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                    <label for="inputEmail" class="sr-only">이메일</label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="이메일" required >
+               </div>
+               <div class="form-group input-group">
+                   <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+                    <label for="inputPassword" class="sr-only">패스워드</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="패스워드" required>
+                </div>
+                </form> 
+          </div>
+        
+          <div class="modal-footer">
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>-->
+            <button class="btn btn-lg btn-info btn-block" type="submit">시작하기</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 회원가입 -->
+    <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel" style="text-align: center;">회원가입</h4>
+          </div>
+          <div class="modal-body">
+                    <form role="form">
+                <div class="form-group input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+           <!--<label for="inputEmail" class="sr-only">이메일 주소</label>-->
+                    <input type="email" id="inputEmail" class="form-control" placeholder="이메일 주소" required >
+                </div>
+                <div class="form-group input-group">
+                    <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                    <!--<label for="inputEmail" class="sr-only">닉네임</label>-->
+                    <input type="nickname" id="inputNickName" class="form-control" placeholder="닉네임" required >
+                </div>
+                <div class="form-group input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="패스워드 (6자리이상)" required >
+                </div>
+                <div class="form-group input-group">
+                    <span class="input-group-addon"><i class="fa fa-check fa-fw"></i></span>
+                    <label for="inputPassword" class="sr-only">Password Confirm</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="패스워드 확인" required >
+                </div>
+            </form>
+              <a class="pull-right" href="private.html"><small>개인정보처리방침</small></a>
+            </div><br>
+          <div class="modal-footer">
+            <button class="btn btn-lg btn-info btn-block" type="submit">가입하기</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL QUESTION PAGE-->
+    <div id="question" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" style="text-align: center;">확인</h4>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <p>질문을 등록 하시겠습니까?</p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" >등록</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>    
+    <!-- markdown editor -->
+    <!--<script src="http://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>-->
+    <!--<script src="/plugin/editor/js/markdown.js"></script>-->
+    <script src="/plugin/editor/js/marked.js"></script>    
+    <script src="/plugin/editor/js/to-markdown.js"></script>
+    <script src="/plugin/editor/js/bootstrap-markdown.js"></script>
+    <script src="http://rawgit.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js"></script>
+    <script src="/plugin/editor/js/main.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            placement: 'bottom'
+        })
+    });  
+        $('.btn-group [title]').tooltip({container: 'body'});
+    </script>
+    
+  
+  
+</body>

@@ -1,0 +1,6 @@
+SELECT
+    count(*) as totalCnt
+FROM
+    TB_BOARD
+WHERE
+    TYPE =  #type#

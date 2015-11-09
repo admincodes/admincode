@@ -1,0 +1,38 @@
+<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" onclick="close_modal('signin')" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel" style="text-align: center;">회원가입</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                        <!--<label for="inputEmail" class="sr-only">이메일 주소</label>-->
+                        <input type="email" id="inputEmailRe" class="form-control" placeholder="이메일 주소" required >
+                    </div>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                        <!--<label for="inputEmail" class="sr-only">닉네임</label>-->
+                        <input type="nickname" id="inputNickNameRe" class="form-control" placeholder="닉네임" required >
+                    </div>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="password" id="inputPasswordRe" class="form-control" placeholder="패스워드 (6자리이상)" required >
+                    </div>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="fa fa-check fa-fw"></i></span>
+                        <label for="inputPassword" class="sr-only">Password Confirm</label>
+                        <input type="password" id="inputPasswordConfirmRe" class="form-control" placeholder="패스워드 확인" required >
+                    </div>
+                </form>
+                <a class="pull-right" href="private.html"><small>개인정보처리방침</small></a>
+            </div><br>
+            <div class="modal-footer">
+                <button class="btn btn-lg btn-info btn-block" type="submit" onclick="register();">가입하기</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+INSERT INTO TB_BOARD_LIKE
+(
+USER_SEQ,
+BOARD_SEQ,
+TYPE)
+VALUES
+(
+'#user_seq#',
+'#board_seq#',
+'#type#')

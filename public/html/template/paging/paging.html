@@ -1,0 +1,32 @@
+<li>
+    <a href="#" onclick="{{prevAction}}" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+    </a>
+</li>
+
+{{#showFirst}}
+<li><a href="#" onclick="{{firstAction}}">1</a></li>
+<li><a>...</a></li>
+{{/showFirst}}
+
+{{#paging}}
+    {{#current}}
+        <li class="active"><a href="javascript:void(0)" onclick="{{action}}">{{number}}<span class="sr-only">(current)</span></a></li>
+    {{/current}}
+    {{#notcurrent}}
+        <li><a href="#" onclick="{{action}}">{{number}}</a></li>
+    {{/notcurrent}}
+{{/paging}}
+
+{{#showLast}}
+<li><a>...</a></li>
+<li><a href="#" onclick="{{lastAction}}">{{lastPage}}</a></li>
+{{/showLast}}
+
+
+<li>
+    <a href="#" onclick="{{nextAction}}" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+    </a>
+</li>
+

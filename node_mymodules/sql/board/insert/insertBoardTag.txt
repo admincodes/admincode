@@ -1,0 +1,1 @@
+INSERT INTO TB_BOARD_TAG VALUES ('#tb_board_seq#', '#tag#')
